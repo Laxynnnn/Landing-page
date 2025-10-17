@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* GLOBAL STYLES & RESET */
 :root {
     --primary-color: #007bff; /* Biru */
@@ -134,4 +135,142 @@ footer {
     .hero h1 {
         font-size: 2em;
     }
+=======
+/* GLOBAL STYLES & RESET */
+:root {
+    --primary-color: #007bff; /* Biru */
+    --secondary-color: #5f59599c;
+    --background-light: #353ca0;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Montserrat; /* Ganti dengan font yang lebih modern */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* HEADER / HERO SECTION */
+.hero {
+    background-color: var(--secondary-color);
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('images/business-photo.jpg'); 
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* FEATURE SECTION */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#features {
+    background-color: rgb(25, 25, 26);
+}
+
+#features h2 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+#features h3 
+#features p {
+    color: white;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 1);
+}
+
+/* CONTACT FORM SECTION */
+.contact-form {
+    background-color: var(--background-light);
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.contact-form input, .contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    background-color:  rgb(25, 25, 26);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* MEDIA QUERIES (RESPONSIVENESS) */
+@media (max-width: 768px) {
+    .feature-grid {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+>>>>>>> c08675962b9465d06c1e5a59a08eca64f08f2754
 }
